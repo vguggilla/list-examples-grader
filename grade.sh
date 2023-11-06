@@ -14,3 +14,16 @@ echo 'Finished cloning'
 
 # Then, add here code to compile and run, and do any post-processing of the
 # tests
+cp -r student-submission/*.java grading-area
+tests=`find grading-area -name "*.java"`
+for file in tests
+do
+    if [[-f $file]]
+    then
+        echo "passed"
+    else
+        echo "Wrong kind of file for $file"
+        exit()
+    fi
+done
+
