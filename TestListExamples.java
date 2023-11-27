@@ -2,13 +2,13 @@ import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.Arrays;
 import java.util.List;
-
+/* 
 class IsMoon implements StringChecker {
   public boolean checkString(String s) {
     return s.equalsIgnoreCase("moon");
   }
 }
-
+*/
 public class TestListExamples {
   @Test(timeout = 500)
   public void testMergeRightEnd() {

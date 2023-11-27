@@ -31,8 +31,8 @@ for file in $tests; do
     fi
 done
 
-javac -cp $CPATH *.java
-java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
+javac -cp $CPATH grading-area/*.java
+java -cp $CPATH org.junit.runner.JUnitCore grading-area/TestListExamples
 
 for file in $tests; do
     if [ $? -ne 0 ]; then
