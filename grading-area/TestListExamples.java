@@ -23,8 +23,8 @@ public class TestListExamples {
   public void testFilterIsMoon() {
     List<String> test = Arrays.asList("MOON", "moOn", "notmoon", "moon");
     IsMoon sc = new IsMoon();
-    ListExamples.filter(test, sc);
+    List<String> result = ListExamples.filter(test, sc);
     List<String> expected = Arrays.asList("MOON", "moOn", "moon");
-    assertEquals(expected, test);
+    assertEquals(expected, result);
   }
 }
